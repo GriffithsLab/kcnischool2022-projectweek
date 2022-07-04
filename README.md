@@ -55,11 +55,16 @@ git push -u origin mynewfeature
 
 ### 5. Further reading:
 
-https://www.biorxiv.org/content/10.1101/2022.05.19.492664v1
+PyTorch whole-brain modelling methodology: 
+  - https://www.biorxiv.org/content/10.1101/2022.05.19.492664v1
+  - https://www.biorxiv.org/content/10.1101/2022.06.09.494069v1
+ 
+Original model by Deco et al.  
 
-https://www.biorxiv.org/content/10.1101/2022.06.09.494069v1
+  - https://www.jneurosci.org/content/33/27/11239 ([PDF])(https://drive.google.com/file/d/1ImucIqk5Cl-8fXVKzal8jY5IaiP5pLgw/view?usp=sharing)
 
-https://www.jneurosci.org/content/33/27/11239 [PDF](https://drive.google.com/file/d/1ImucIqk5Cl-8fXVKzal8jY5IaiP5pLgw/view?usp=sharing)
+
+Sleep fMRI data from:
 
 https://openneuro.org/datasets/ds000201/versions/1.0.3
 
