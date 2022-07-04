@@ -68,7 +68,7 @@ PyTorch whole-brain modelling methodology:
  
 Original model by Deco et al.  
 
-  - https://www.jneurosci.org/content/33/27/11239 ([PDF])(https://drive.google.com/file/d/1ImucIqk5Cl-8fXVKzal8jY5IaiP5pLgw/view?usp=sharing)
+  - https://www.jneurosci.org/content/33/27/11239 [(PDF)](https://drive.google.com/file/d/1ImucIqk5Cl-8fXVKzal8jY5IaiP5pLgw/view?usp=sharing)
 
 
 Sleep fMRI data from:
