@@ -31,6 +31,6 @@ os.remove('ptseries_download.zip')
 # Schaefer parcellation
 print('\n\nDownloading Schaefer parcellation data ........\n')
 url = 'https://github.com/ThomasYeoLab/CBIG/raw/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/HCP/fslr32k/cifti/Schaefer2018_100Parcels_7Networks_order.dlabel.nii'
-gdown.download(url, output='Schaefer2018_100Parcels_7Networks_order.dlabel.nii.gz')
+gdown.download(url, output='Schaefer2018_100Parcels_7Networks_order.dlabel.nii')
 
 
