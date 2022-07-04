@@ -59,7 +59,7 @@ https://www.biorxiv.org/content/10.1101/2022.05.19.492664v1
 
 https://www.biorxiv.org/content/10.1101/2022.06.09.494069v1
 
-https://www.jneurosci.org/content/33/27/11239
+https://www.jneurosci.org/content/33/27/11239 [PDF](https://drive.google.com/file/d/1ImucIqk5Cl-8fXVKzal8jY5IaiP5pLgw/view?usp=sharing)
 
 https://openneuro.org/datasets/ds000201/versions/1.0.3
 
