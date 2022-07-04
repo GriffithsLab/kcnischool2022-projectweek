@@ -1,5 +1,4 @@
 class classyclass(object):
   def doawesomething(self):
-    print('yeahhh')
-    print('oooooo')
-
+	print("yeah")
+        print("ohh")
