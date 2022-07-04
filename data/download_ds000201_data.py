@@ -1,29 +1,36 @@
 
 
-## Setup Intructions
-
-!gdown https://drive.google.com/drive/folders/1rlh75dpjOJxeS0WZPojuzjAwl5OENWrV -O subjinfo --folder --remaining-ok
-
-!gdown https://drive.google.com/drive/folders/1cu6bCLNEp_YR-8C3zm_v2B7_lXQM9Zg0 -O ptseries --folder --remaining-ok
-
-!gdown https://drive.google.com/drive/folders/12os_7xC10QUwJANBJb-5CXG1Gg_9YUgQ  -O dwiconn --folder --remaining-ok
-```
+## Data download
+## ----------------
+import os,gdown,shutil
 
 
-```python
-from kspw.pytorrww import Model_fitting,RNNWWD,plot_fit_parameters
-```
+# Gdown download the main data folders 
 
-```bash
-wget https://github.com/ThomasYeoLab/CBIG/raw/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/HCP/fslr32k/cifti/Schaefer2018_100Parcels_7Networks_order.dlabel.nii
-```
+# DWI Conn Folder
+print('\n\nDownloading DWI conn data........\n')
+fileid = '1vga0J5HdpHwSpCbH6lwAInKGzzl_j8oo'
+gdown.download(id=fileid,output='dwiconn_download.zip')
+shutil.unpack_archive('dwiconn_download.zip', '')
+os.remove('dwiconn_download.zip')
 
-cd ..
+# Subj Info Folder
+print('\n\nDownloading subj info data ........\n')
+fileid = '1CcJBJ1kQigKn2lOT-PMQqMPm9afl4O89'
+gdown.download(id=fileid,output='subjinfo_download.zip')
+shutil.unpack_archive('subjinfo_download.zip','')
+os.remove('subjinfo_download.zip')
 
+# Ptseries folder
+print('\n\nDownloading rsfMRI ptseries data.......\n')
+fileid = '1CW9fHKJa1qCCwPsQWoymQNbWZsoDbntn'
+gdown.download(id=fileid,output='ptseries_download.zip')
+shutil.unpack_archive('ptseries_download.zip','')
+os.remove('ptseries_download.zip')
 
-```python
-from kspw.pytorrww import Model_fitting,RNNWWD,plot_fit_parameters
-```
-
+# Schaefer parcellation
+print('\n\nDownloading Schaefer parcellation data ........\n')
+url = 'https://github.com/ThomasYeoLab/CBIG/raw/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/HCP/fslr32k/cifti/Schaefer2018_100Parcels_7Networks_order.dlabel.nii'
+gdown.download(url, output='Schaefer2018_100Parcels_7Networks_order.dlabel.nii.gz')
 
 
