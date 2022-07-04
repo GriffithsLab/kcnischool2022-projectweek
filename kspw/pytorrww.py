@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Authors: Zheng Wang, John Griffiths, Hussain Ather
+Authors: Zheng Wang, John Griffiths, Et Al. 
 WongWangDeco Model fitting
 module for forward model (wwd) to simulate a batch of BOLD signals
 input: noises, updated model parameters and current state (6)
@@ -8,7 +8,6 @@ outputs: updated current state and a batch of BOLD signals
 """
 
 """
-WWD_Model_tf.py 
 This file performs the modelling and graph-building for the Wong-Wang neuronal mass model
 in determining network activity. 
 This large-scale dynamic mean field model (DMF) approximates the average ensemble 
