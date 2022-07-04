@@ -2,6 +2,13 @@
 
 ## About the project
 
+Disrupted **sleep** is heavily implicated in a wide variety of psychiatric and neurological illnesses. Insufficient sleep is well known to lead to neuronal hyperexcitabilty, and may lead mechanistically to brain pathologies via metabolic and inflammatory processes. 
+
+In this project we will use whole-brain modelling of fMRI data from the [Stockholm Sleepy Brain Study](https://openneuro.org/datasets/ds000201/versions/1.0.3) to investigate physiological and network-level signatures and mechanisms of sleep deprivation. 
+
+We will be using a newly-developed approach for whole-brain modelling in Python using `PyTorch`, a widely-used machine learning library, as well as various standard Python neuroimaging tools (`nilearn`, `nibabel`, `hcp_utils`). All of the code needed is contained in this repo, and instructions for downloaded the requisite data are given below. 
+
+
 
 
 ## Setup Intructions
