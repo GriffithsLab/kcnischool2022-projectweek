@@ -36,7 +36,7 @@ import seaborn as sns
 import nibabel as nib
 
 # Google colab stuff
-from google.colab import drive
+#from google.colab import drive
 
 # PyTorch and additional numpy stuff for the model
 import torch

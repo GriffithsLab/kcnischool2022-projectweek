@@ -70,6 +70,6 @@ def load_stockholm_data():
     for sub,df in pcrs_dfs.items(): df.index = schaf_labs[1:]; df.columns = schaf_labs[1:]
 
 
-    return (schaf_idxs,schaf_labs,schaf_rgbs,
+    return (schaf_idxs,schaf_labs,schaf_rgbs,schaf_dat,
             subs,dwiconn_dfs,ptsrs_dfs,pcrs_dfs)
 
