@@ -1,5 +1,8 @@
 # KCNI Sumer School 2022 - Whole-Brain + Cognitive Network Modelling Project Week
 
+## About the project
+
+
 
 ## Setup Intructions
 
@@ -58,5 +61,6 @@ https://www.biorxiv.org/content/10.1101/2022.06.09.494069v1
 
 https://www.jneurosci.org/content/33/27/11239
 
+https://openneuro.org/datasets/ds000201/versions/1.0.3
 
 
