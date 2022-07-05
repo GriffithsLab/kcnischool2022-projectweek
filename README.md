@@ -30,14 +30,24 @@ git merge upstream/main
 
 On scinet:
 
+First time only: create environment and install libraries
+
 ```bash
 module load anaconda3
-conda create -n "kcnischool2022-projectweek" pip git python=3.7
-source activate kcnischool2022-projectweek
+conda create -n "kcnischool2022" pip git python=3.7
+source activate kcnischool2022
 git clone https://github.com/griffithslab/kcnischool2022-projectweek
-cd kcnischool-projectwek
+cd kcnischool-projectweek
 pip install -r requirements.txt
 ```
+
+After that, load environment for every usage
+
+```bash
+source activate kcnischool2022
+jupyter notebook --no-browser --port=XXX
+```
+
 
 ### 3. Download data
 
