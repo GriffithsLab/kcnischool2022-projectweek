@@ -76,3 +76,24 @@ Sleep fMRI data from:
 https://openneuro.org/datasets/ds000201/versions/1.0.3
 
 
+
+
+## Instructions for launching notebooks in this repo in google colab:
+
+1. Click on the 'open in colab' badge below
+
+2. Select the notebook that you want to run 
+
+3. Open the notebook
+
+4. Add the following in a new cell at the top and run:
+
+```bash
+!git clone https://github.com/griffithslab/kcnischool2022-projectweek
+!cd kcnischool2022-projectweek/data
+!python download_ds000201_data.py
+!cd ..
+```
+
+ [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/griffithslab/kcnischool2022-projectweek)
+
