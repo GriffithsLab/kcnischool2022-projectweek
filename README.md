@@ -78,7 +78,7 @@ https://openneuro.org/datasets/ds000201/versions/1.0.3
 
 
 
-## Instructions for launching notebooks in this repo in google colab:
+## Instructions for launching notebooks in this repo in google colab
 
 1. Click on the 'open in colab' badge below
 
@@ -88,12 +88,14 @@ https://openneuro.org/datasets/ds000201/versions/1.0.3
 
 4. Add the following in a new cell at the top and run:
 
-```bash
-!git clone https://github.com/griffithslab/kcnischool2022-projectweek
-!cd kcnischool2022-projectweek/data
-!python download_ds000201_data.py
-!cd ..
+```python
+import os
+os.system('rm -rf kcnischool2022-projectweek')
+os.system('git clone https://github.com/griffithslab/kcnischool2022-projectweek')
+os.chdir('kcnischool2022-projectweek/data')
+os.system('python download_ds000201_data.py')
+os.chdir('../')
+os.system('pip install nilearn hcp_utils')
 ```
 
- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/griffithslab/kcnischool2022-projectweek)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/griffithslab/kcnischool2022-projectweek)
