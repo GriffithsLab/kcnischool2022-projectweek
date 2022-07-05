@@ -1,0 +1,8 @@
+pandas
+matplotlib
+seaborn
+
+nilearn
+hcp_utils
+
+torch
