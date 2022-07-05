@@ -28,8 +28,15 @@ git merge upstream/main
 
 ### 2. Setup Python env
 
+On scinet:
+
 ```bash
-conda activate myenv
+module load anaconda3
+conda create -n "kcnischool2022-projectweek" pip git python=3.7
+source activate kcnischool2022-projectweek
+git clone https://github.com/griffithslab/kcnischool2022-projectweek
+cd kcnischool-projectwek
+pip install -r requirements.txt
 ```
 
 ### 3. Download data
