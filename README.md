@@ -30,6 +30,12 @@ git merge upstream/main
 
 On scinet:
 
+Make sure you port forward when sshing:
+
+```bash
+ssh -X -L XXXX:localhost:XXXX username@teach.scinet.utoronto.ca
+```
+
 First time only: create environment and install libraries
 
 ```bash
@@ -47,6 +53,7 @@ After that, load environment for every usage
 source activate kcnischool2022
 jupyter notebook --no-browser --port=XXX
 ```
+
 
 
 ### 3. Download data
