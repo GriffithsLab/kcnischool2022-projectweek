@@ -703,7 +703,20 @@ class Model_fitting():
         output_test['q'] = q_sim
         return output_test
 
+def run_forward_model_newParas(F, g= 100, g_EE=2.5, g_IE=0.5, g_EI= 0.5, std_in= 0.01, std_out= 0.01, w_bb= 0): 
+    
+    #### input optimal model parameters
 
+    F.model.g = Parameter(torch.tensor(g, dtype=torch.float32))
+    F.model.g_EE = Parameter(torch.tensor(g_EE, dtype=torch.float32))
+    F.model.g_EI = Parameter(torch.tensor(g_EI, dtype=torch.float32))
+    F.model.g_IE = Parameter(torch.tensor(g_IE, dtype=torch.float32))
+    F.model.w_bb = Parameter(torch.tensor(w_bb, dtype=torch.float32))
+    F.model.std_in = Parameter(torch.tensor(std_in, dtype=torch.float32))
+    F.model.std_out = Parameter(torch.tensor(std_out, dtype=torch.float32))
+    
+    output_test = F.test(20)
+    return output_test
 
 
 def plot_sim_states_outputs(ts, output):
