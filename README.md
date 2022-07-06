@@ -38,11 +38,15 @@ ssh -X -L XXXX:localhost:XXXX username@teach.scinet.utoronto.ca
 
 First time only: create environment and install libraries
 
+(note: this assumes that a) you have a fork of this repo, and b) you have added your scinet ssh keys generated with `ssh-keygen` to github)
+
+
+
 ```bash
 module load anaconda3
 conda create -n "kcnischool2022" pip git python=3.7
 source activate kcnischool2022
-git clone https://github.com/griffithslab/kcnischool2022-projectweek
+git clone git@github.com:mygithubusername/kcnischool2022-projectweek
 cd kcnischool-projectweek
 pip install -r requirements.txt
 ```
