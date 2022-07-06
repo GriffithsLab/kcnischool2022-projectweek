@@ -427,7 +427,7 @@ class Model_fitting():
         using the optimal model parater to simulate the BOLD
     
     """
-    def __init__(self, model_wwd, ts, num_epochs):
+    def __init__(self, model_wwd, ts, num_epochs, learning_rate=0.01):
         """
         Parameters
         ----------
@@ -440,6 +440,8 @@ class Model_fitting():
         """
         self.model = model_wwd
         self.num_epochs = num_epochs
+        self.learning_rate = learning_rate
+
         if ts.shape[1] != model_wwd.node_size:
             print('ts is a matrix with the number of datapoint X the number of node')
         else:
@@ -457,7 +459,7 @@ class Model_fitting():
         """
         output_train = {}
         # define an optimizor(ADAM)
-        optimizer = optim.Adam(self.model.parameters(), lr=0.01, eps=1e-7)
+        optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate, eps=1e-7)
         # initial state
         X = torch.tensor(0.45 * np.random.uniform(0, 1, (self.model.node_size, self.model.state_size)) + np.array(
             [0, 0, 0, 1.0, 1.0, 1.0]), dtype=torch.float32)
