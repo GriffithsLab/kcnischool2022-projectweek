@@ -54,7 +54,9 @@ pip install -r requirements.txt
 After that, load environment for every usage
 
 ```bash
+module load anaconda3
 source activate kcnischool2022
+cd kcnischool2022-projectweek
 jupyter notebook --no-browser --port=XXX
 ```
 
