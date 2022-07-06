@@ -129,3 +129,16 @@ os.system('pip install nilearn hcp_utils')
 ```
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/griffithslab/kcnischool2022-projectweek)
+
+
+
+## Troubleshooting
+
+If you are getting write permission errors when installing libraries in your conda env on scinet, you might need to do use the base Python environment, and do the following:
+
+```bash
+pip install -r requirements.txt --user
+```
+
+
+
