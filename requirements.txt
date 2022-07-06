@@ -1,4 +1,6 @@
 pandas
+numpy
+scipy
 matplotlib
 seaborn
 
@@ -6,3 +8,8 @@ nilearn
 hcp_utils
 
 torch
+
+jupyter
+ipykernel
+
+
