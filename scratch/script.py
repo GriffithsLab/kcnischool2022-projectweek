@@ -2,6 +2,7 @@ import os, sys, glob, numpy as np, pandas as pd
 from matplotlib import pyplot as plt
 import h5py
 
+cwd = os.getcwd()
 home = '/home/l/lcl_uotkcni22/lcl_uotkcni22s2133/kcnischool2022-projectweek'
 
 sys.path.append(home)
@@ -13,6 +14,8 @@ from kspw.pytorrww import Model_fitting, h_tf, RNNWWD, plot_fit_parameters, plot
 stuff = load_stockholm_data()
 schaf_idxs, schaf_labs, schaf_rgbs, schaf_dat, subs, dwiconn_dfs, ptsrs_dfs, pcrs_dfs = stuff
 subsesses = list(pcrs_dfs.keys())
+
+os.chdir(cwd)
 
 
 def fitsub(sub):
@@ -35,14 +38,14 @@ def fitsub(sub):
                    g_std_ini=.1,
                    gEE_mean_ini=2.5,
                    gEE_std_ini=.1)
-    F = Model_fitting(model, ts, num_epochs=1, learning_rate=0.001)
+    F = Model_fitting(model, ts, num_epochs=80, learning_rate=0.02)
     output_train = F.train()
     output_test = F.test(20)
 
     print('Done')
 
     # write to file
-    f = 'scratch/results_' + str(sub) + '.h5'
+    f = 'results_' + str(sub) + '.h5'
     H = h5py.File(f, 'w')
     H['sc'] = sc
     H['ts'] = ts
