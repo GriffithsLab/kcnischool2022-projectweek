@@ -1,9 +1,11 @@
 ## Data download
 ## ----------------
-import os,gdown,shutil
+import os, gdown, shutil
 
-
-# Gdown download the ses-2 data 
-gdown.download(id='1Le4Iq7vozVkA4oEVDS13OybEUeX51aVg')
-shutil.unpack_archive('ses1-20220707T225637Z-001.zip', '')
-os.remove('ses1-20220707T225637Z-001.zip')
+# Gdown download the ses-1 data
+gdown.download(id='1pyDZ0i00gPlxJVziwuVcZ1j_kaPjWrau')
+shutil.unpack_archive('ses1_partA.zip', '')
+os.remove('ses1_partA.zip')
+gdown.download(id='1nKqy_CskMJuly7tpXJOWcQdxFz8Kek8k')
+shutil.unpack_archive('ses1_partB.zip', '')
+os.remove('ses1_partB.zip')
